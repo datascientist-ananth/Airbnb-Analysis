@@ -28,12 +28,12 @@ df = pd.read_csv("D:/machine learning/Airbnb_data.csv")
 
 def show_cash_animation():
 
-    animation_placeholder.empty()  # Clear previous animation
+    animation_placeholder.empty()  # Clear any previous content in the placeholder for a fresh animation display
 
     for _ in range(10):  # Adjust range for animation duration
         animation_placeholder.markdown("💵💵💵 Cash Flow! 💵💵💵")
         time.sleep(0.1)
-        animation_placeholder.empty()
+        animation_placeholder.empty() # Clear the content to create the flickering effect
         time.sleep(0.1)
 
 # Display selected page
